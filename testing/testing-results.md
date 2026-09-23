@@ -2,69 +2,83 @@
 
 ## Test 1: Face Detection
 
-Expected Result:
+**Expected Result:**  
 A visible face should be detected by the system.
 
-Result:
-Face detected successfully.
+**Result:**  
+The system detected the visible face and displayed the face-detection result.
 
-Status:
+**Evidence:**  
+`face-detected.png`
+
+**Status:**  
 PASS
+
+---
 
 ## Test 2: No Face Detection
 
-Expected Result:
+**Expected Result:**  
 The system should identify when no face is visible.
 
-Result:
-No face detected successfully.
+**Result:**  
+The system identified that no face was detected.
 
-Status:
+**Evidence:**  
+`no-face-detected.png`
+
+**Status:**  
 PASS
+
+---
 
 ## Test 3: Multiple Face Detection
 
-Expected Result:
+**Expected Result:**  
 The system should identify when multiple faces are visible.
 
-Result:
-Multiple faces detected successfully.
+**Result:**  
+The system detected multiple faces.
 
-Status:
+**Evidence:**  
+`multiple-faces.png`
+
+**Status:**  
 PASS
 
-## Test 4: Incident Detection
+---
 
-Expected Result:
-An unusual condition should be recorded as an incident.
+## Test 4: Unusual Incident Detection
 
-Result:
-Incident was detected and counted.
+**Expected Result:**  
+An unusual condition should be detected and recorded as an incident.
 
-Status:
+**Result:**  
+The prototype detected the unusual situation and displayed the incident indication.
+
+**Evidence:**  
+`incident-detection.png`
+
+**Status:**  
 PASS
 
-## Test 5: Human Review Flag
+---
 
-Expected Result:
-Multiple incidents should trigger a human-review flag.
+## Test 5: Session Summary
 
-Result:
-Human-review flag was triggered.
-
-Status:
-PASS
-
-## Test 6: Session Summary
-
-Expected Result:
+**Expected Result:**  
 The system should provide a summary when the monitoring session ends.
 
-Result:
-Session summary was generated.
+**Result:**  
+After the camera session ended, the prototype displayed the session summary in the VS Code terminal.
 
-Status:
+**Evidence:**  
+`session-summary.png`
+
+**Status:**  
 PASS
+
+---
 
 ## Testing Issue Identified
 
@@ -73,3 +87,9 @@ During initial testing, the incident counter increased repeatedly while the same
 The logic was reviewed and the root cause was identified. The counting mechanism was adjusted to prevent the same incident from being repeatedly counted across consecutive frames.
 
 The prototype was then retested successfully.
+
+## Testing Conclusion
+
+The prototype successfully demonstrated the tested detection and monitoring behaviours. The testing also demonstrated an iterative problem-solving process by identifying and correcting an issue in the incident-counting logic.
+
+The results represent testing of a self-directed proof of concept and should not be interpreted as validation of a production-ready examination-monitoring system.
