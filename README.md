@@ -143,7 +143,6 @@ The complete Business Analysis case study is available here:
 
 **[View the Full Case Study PDF](https://drive.google.com/file/d/1KBsBtcfR2BZnxyYh5nOPWHWx-Fpjc8m1/view?usp=sharing)**
 
-Replace the placeholder above with your Google Drive PDF link before committing the README.
 
 ## Technologies Used
 
